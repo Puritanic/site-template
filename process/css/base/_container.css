@@ -1,0 +1,5 @@
+.container { /* todo: mutate this to wrapper */
+	width: $containerDefault;
+	max-width: $containerMax;
+	margin:0 auto;
+}
