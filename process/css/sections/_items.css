@@ -23,6 +23,19 @@ $itemWidth: 100%;
 			@media $medium { width: calc($itemWidth/4); }
 			@media $large { width: calc($itemWidth/6); }
 
+			transition: all .4s ease-in-out;
+			opacity: .8;
+
+			&:hover, &:focus {
+				transform: scale(1.2);
+				opacity: 1;
+				z-index: 3;
+
+				.product__name {
+					animation: slideInUp .5s;
+				}
+			}	
+
 			.product__name {
 				background: $red;
 				color: $yellow;
