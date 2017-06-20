@@ -1,0 +1,18 @@
+$colorBackgroundAbout: color($green shade(25%));
+
+#ourGoal {
+
+	color: $offWhite;
+	font-size: 2rem;
+	background-color: $colorBackgroundAbout;
+	.imageheader {
+		@mixin backImage '../images/backgrounds/cycling.jpg', 70vh, transparent, $colorBackgroundAbout, top;
+	}
+	.headline {
+		color: color($yellow tint(15%));
+	}
+
+	a {
+		color: color($green tint(30%));
+	}
+}

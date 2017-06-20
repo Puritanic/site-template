@@ -1,0 +1,78 @@
+$colorBackgroundPeople: color($yellow shade(20%));
+$itemWidth: 100%;
+
+#people {
+
+	background-color: $colorBackgroundPeople;
+
+	.imageheader {
+		@mixin backImage '../images/backgrounds/soccer.jpg', 40vh, transparent, $colorBackgroundPeople, top;
+	}
+
+	.headline {
+		color: $offWhite;
+		padding-bottom: 3rem;
+	}
+
+	.people__cards {
+		@media $small {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.person__card {
+			background: color($offWhite alpha(15%));
+			box-shadow: 5px 5px 3px color($yellow alpha(50%));
+			border-radius: 2rem;
+			margin-bottom: 3rem;
+			overflow: hidden;
+			transition: all .2s ease-in;
+			transform: scale(.9);
+			opacity: .8;
+
+			&:hover {
+				transform: scale(1.1);
+				opacity: 1;
+			}
+
+			@media  $small {
+				width: calc($itemWidth/2 - 1.5rem) /* divide by two and then add 1.5 margin to all sides of cards*/
+			}
+
+			@media  $large {
+				width: calc($itemWidth/3 - 1.5rem) /* divide by two and then add 1.5 margin to all sides of cards*/
+			}
+
+			.card-info {
+				background: color($orange alpha(90%));
+				padding: 3% 7%;
+
+				.card-name {
+					font-size: 2rem;
+					line-height: 110%;
+					color: $red;
+				}
+
+				.card-title {
+					color:color($colorBackground alpha(60%));
+					font-size: 1.4rem;
+					line-height: 100%;
+				}
+			} /* card info */
+
+			.card-text {
+				font-size: 1.6rem;
+				font-weight: $fontNormal;
+				line-height: 130%;
+				margin:0;
+				padding: 7%;
+
+				em {
+					color: color($orange shade(10%));
+					font-size: 1.9rem;
+				}
+			}
+		}
+	} /*people__cards*/
+} /* people */ 

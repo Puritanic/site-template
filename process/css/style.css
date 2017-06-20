@@ -7,3 +7,8 @@
 @import 'modules/header';
 @import 'modules/footer';
 @import 'modules/section';
+
+@import 'sections/history';
+@import 'sections/items';
+@import 'sections/ourGoal';
+@import 'sections/people';

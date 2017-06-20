@@ -1,0 +1,46 @@
+$itemWidth: 100%;
+
+#products {
+	background: $offWhite;;
+	.product__imageheader {
+		/*@mixin backImage '../images/backgrounds/swimming.jpg', auto, transparent, transparent;*/
+	}
+	.product__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+
+		.product__item {
+			position: relative;
+			color: $offWhite;
+			overflow: hidden;
+
+			width: calc($itemWidth/2); /* dividing into columns */
+
+			@media $small { width: calc($itemWidth/3); }
+			@media $medium { width: calc($itemWidth/4); }
+			@media $large { width: calc($itemWidth/6); }
+
+			.product__name {
+				background: $red;
+				color: $yellow;
+				font-weight: $fontHeavy;
+				font-size: 80%;
+				text-align: center;
+				position: absolute; /* item names will always going to be on bottom of the parent element, bcs its parent is relative and name is absolute*/
+				bottom: 0;
+				width: $itemWidth;
+				display: none;
+			} /* .product__name*/
+
+			&:hover , &:focus { /* we should always use focus with hover because of the screen readers */
+				.product__name {
+					display: block;
+				}
+			}
+		} /*.product__item*/
+	} /*.product__list*/
+} /* products */
+

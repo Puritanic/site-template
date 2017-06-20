@@ -2,7 +2,7 @@
 	@mixin backImage '../images/backgrounds/running.jpg', 500px;
 
 	@media $small {
-		@mixin backImage '../images/backgrounds/running.jpg', 800px;
+		@mixin backImage '../images/backgrounds/running.jpg', 965px;
 	}
 
 	display: flex;
