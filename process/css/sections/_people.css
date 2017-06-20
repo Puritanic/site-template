@@ -4,6 +4,7 @@ $itemWidth: 100%;
 #people {
 
 	background-color: $colorBackgroundPeople;
+	padding-bottom: 1rem;
 
 	.imageheader {
 		@mixin backImage '../images/backgrounds/soccer.jpg', 40vh, transparent, $colorBackgroundPeople, top;
@@ -31,7 +32,7 @@ $itemWidth: 100%;
 			transform: scale(.9);
 			opacity: .8;
 
-			&:hover {
+			&:hover , &focus {
 				transform: scale(1.1);
 				opacity: 1;
 			}

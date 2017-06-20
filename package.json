@@ -1,7 +1,7 @@
 {
   "name": "postcss",
   "version": "1.0.0",
-  "description": "A repository for an upcoming Responsive Single Page Layouts course on Lynda.com",
+  "description": "A responsive single page website",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -23,12 +23,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planetoftheweb/postcsslayouts.git"
+    "url": "git+https://github.com/Puritanic/site-template.git"
   },
-  "author": "Ray Villalobos",
+  "author": "Puritanic",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/planetoftheweb/postcsslayouts/issues"
-  },
-  "homepage": "https://github.com/planetoftheweb/postcsslayouts#readme"
 }

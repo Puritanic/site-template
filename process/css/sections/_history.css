@@ -15,6 +15,11 @@
 
 	.headline {
 		color: $red;
+		text-align: center;
+
+		@media $small {
+			text-align: left;
+		}
 	}
 
 	em {
